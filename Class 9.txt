@@ -1,0 +1,260 @@
+Class 9 (04/08)
+----------
+
+Topics: if condition, for loop
+Next: while loop, loop control statements
+Exercise: 10, 11, 12
+
+-----
+If condition:
+
+If 
+If..else
+If..elif
+If..elif..elif..else
+
+
+For loop,
+Sequence:  String, List, Tuple
+
+Type:1,
+for tmpvar in sequence:
+  print(tmpvar)
+  
+Type:2,
+for tmpindex in range(len(sequence)):
+  print(tmpindex, sequence[tmpindex])
+
+--------
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> 
+>>> name = "python"
+>>> 
+>>> for i in name:
+	print(i)
+
+	
+p
+y
+t
+h
+o
+n
+>>> for i in name:
+	print("Character: ", i)
+
+	
+Character:  p
+Character:  y
+Character:  t
+Character:  h
+Character:  o
+Character:  n
+>>> for i in name:
+	print("Character: ", i.upper())
+
+	
+Character:  P
+Character:  Y
+Character:  T
+Character:  H
+Character:  O
+Character:  N
+>>> for i in name:
+	if i == "h":
+	  print("Character Upper: ", i.upper())
+	else:
+		print("Character:", i)
+
+		
+Character: p
+Character: y
+Character: t
+Character Upper:  H
+Character: o
+Character: n
+>>> for i in name:
+	if i == "h":
+	  print("Character Upper: ", i.upper())
+	print("Character:", i)
+
+	
+Character: p
+Character: y
+Character: t
+Character Upper:  H
+Character: h
+Character: o
+Character: n
+>>> 
+>>> 
+>>> mylist = [10, 20, 30]
+>>> 
+>>> for j in mylist:
+	print(j)
+
+	
+10
+20
+30
+>>> 
+>>> mytuple = (10, 20, 30)
+>>> 
+>>> for k in mytuple:
+	print(k)
+
+	
+10
+20
+30
+>>> 
+>>> 
+>>> for k in mytuple:
+	print(k); print("For loop")
+
+	
+10
+For loop
+20
+For loop
+30
+For loop
+>>> 
+>>> 
+>>> 
+>>> mydict = {'id': 123,'name': 'manoj', 'location': "Chennai"}
+>>> 
+>>> mydict
+{'name': 'manoj', 'location': 'Chennai', 'id': 123}
+>>> 
+>>> 
+>>> mydict.keys()
+dict_keys(['name', 'location', 'id'])
+>>> mydict.values()
+dict_values(['manoj', 'Chennai', 123])
+>>> 
+>>> mydict.items()
+dict_items([('name', 'manoj'), ('location', 'Chennai'), ('id', 123)])
+>>> 
+>>> 
+>>> for k in mydict.keys():
+	print(k)
+
+	
+name
+location
+id
+>>> for k in mydict.keys():
+	print(k, mydict[k])
+
+	
+name manoj
+location Chennai
+id 123
+>>> 
+>>> mydict['id']
+123
+>>> for val in mydict.values():
+	print(val)
+
+	
+manoj
+Chennai
+123
+>>> 
+>>> for k,v in mydict.items():
+	print(k, v)
+
+	
+name manoj
+location Chennai
+id 123
+>>> for k in mydict.items():
+	print(k)
+
+	
+('name', 'manoj')
+('location', 'Chennai')
+('id', 123)
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> range(5)
+range(0, 5)
+>>> 
+>>> for i in range(5): print(i)
+
+0
+1
+2
+3
+4
+>>> for i in range(5, 11): print(i)
+
+5
+6
+7
+8
+9
+10
+>>> for i in range(5, 26, 5): print(i)
+
+5
+10
+15
+20
+25
+>>> name
+'python'
+>>> 
+>>> 
+>>> len(name)
+6
+>>> 
+>>> for i in range(len(name)): print(i)
+
+0
+1
+2
+3
+4
+5
+>>> for i in range(len(name)): print(i, name[i])
+
+0 p
+1 y
+2 t
+3 h
+4 o
+5 n
+>>> 
+>>> for i in name:
+	print(i)
+
+	
+p
+y
+t
+h
+o
+n
+>>> 
+>>> 10//3
+3
+>>> 
+>>> 10%3
+1
+>>> 
+>>> #mynum%2 == 0
+>>> 
+>>> 
+>>> name
+'python'
+>>> name[::-1]
+'nohtyp'
+>>> 

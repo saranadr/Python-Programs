@@ -1,0 +1,24 @@
+Class  (26/09)
+----------
+
+Topics: Database
+Next: 
+Exercise: 
+
+-----
+
+Database:
+
+show databases;
+create database sample;
+use sample;
+show tables;
+create table student(regno int,name text);
+desc student;
+select * from student;
+insert into student values(1002,'aaaa');
+update student set name='bbbb' where regno=1002
+select name from student where regno=1002
+delete from student;
+drop table student;
+drop database sample;

@@ -1,0 +1,31 @@
+Class 26 (11/09)
+----------
+
+Topics: Iterators, Generator, Decorators, 
+Next: Signal Handling,  Client-Server Architecture,  OOPS: Data Encapsulation, Overriding, Overloading, polymorphism, getter, setter
+Exercise: 33, 34, 35
+
+-----
+Iterator:
+ It is used to iterate values from the sequence one by one.
+ 
+Generators:
+ It is used to generate the iterators.
+ 
+Decorators:
+ wrapper function
+
+
+2 Types of Programs,
+ 1. Daemon script - 24x7
+ 2. Standalone / On-Demand script
+ 
+ 
+Servername, port
+ http - 80
+ https - 443
+ ftp - 22
+ telnet - 25
+ 
+ 1-1024 - Reserved
+ 1024 - 65536

@@ -1,0 +1,443 @@
+Class 20 (19/08)
+----------
+
+Topics: OOPS - Inheritance, Overloading/overriding,  Debugging & Misc Function
+Next: Regular Expressions
+Exercise: 20
+
+-----
+Inheritance,
+
+Misc,
+
+Executing system commands,
+ import os
+ os.system("cmd")
+ 
+ cmdout = os.popen("date /T")
+ for out in cmdout:
+   print(out)
+   
+   
+Command line args,
+ import sys
+ print(sys.argv)
+
+
+Python debugger,
+ python -m pdb <filename.py> 
+ 
+---------------
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>dir
+ Volume in drive C has no label.
+ Volume Serial Number is A2A9-59D4
+
+ Directory of C:\Users\MEGALADEVI B
+
+09-06-2023  11:03    <DIR>          .
+09-06-2023  11:03    <DIR>          ..
+28-05-2023  09:02    <DIR>          .idlerc
+04-11-2018  18:18    <DIR>          Contacts
+27-05-2023  16:33    <DIR>          Desktop
+09-08-2023  06:38    <DIR>          Documents
+19-08-2023  07:26    <DIR>          Downloads
+04-11-2018  18:18    <DIR>          Favorites
+04-11-2018  18:18    <DIR>          Links
+15-01-2023  03:21    <DIR>          Music
+04-11-2018  18:18    <DIR>          Pictures
+04-11-2018  18:18    <DIR>          Saved Games
+30-03-2016  09:04    <DIR>          sbm
+04-11-2018  18:18    <DIR>          Searches
+24-03-2023  11:37    <DIR>          SkyDrive
+24-03-2023  10:30    <DIR>          Tracing
+04-11-2018  18:18    <DIR>          Videos
+               0 File(s)              0 bytes
+              17 Dir(s)  67,614,380,032 bytes free
+
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>date /T
+19-08-2023
+
+C:\Users\MEGALADEVI B>time /T
+07:50
+
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>C:\Python34\python.exe
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (In
+tel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> import os
+>>> os.system("date /T")
+19-08-2023
+0
+>>> os.system("datZXcvZVCXZe /T")
+'datZXcvZVCXZe' is not recognized as an internal or external command,
+operable program or batch file.
+1
+>>> os.system("time /T")
+07:53
+0
+>>>
+>>>
+>>> out = os.popen("date /T")
+>>> for line in out:
+...   print(line)
+...
+19-08-2023
+
+>>> out = os.popen("date /T")
+>>>
+>>> print(out)
+<os._wrap_close object at 0x01CE9ED0>
+>>>
+>>>
+>>> out = os.popen("dir")
+>>> for line in out:
+...   print(line)
+...
+ Volume in drive C has no label.
+
+ Volume Serial Number is A2A9-59D4
+
+
+
+ Directory of C:\Users\MEGALADEVI B
+
+
+
+09-06-2023  11:03    <DIR>          .
+
+09-06-2023  11:03    <DIR>          ..
+
+28-05-2023  09:02    <DIR>          .idlerc
+
+04-11-2018  18:18    <DIR>          Contacts
+
+27-05-2023  16:33    <DIR>          Desktop
+
+09-08-2023  06:38    <DIR>          Documents
+
+19-08-2023  07:26    <DIR>          Downloads
+
+04-11-2018  18:18    <DIR>          Favorites
+
+04-11-2018  18:18    <DIR>          Links
+
+15-01-2023  03:21    <DIR>          Music
+
+04-11-2018  18:18    <DIR>          Pictures
+
+04-11-2018  18:18    <DIR>          Saved Games
+
+30-03-2016  09:04    <DIR>          sbm
+
+04-11-2018  18:18    <DIR>          Searches
+
+24-03-2023  11:37    <DIR>          SkyDrive
+
+24-03-2023  10:30    <DIR>          Tracing
+
+04-11-2018  18:18    <DIR>          Videos
+
+               0 File(s)              0 bytes
+
+              17 Dir(s)  67,614,384,128 bytes free
+
+>>>
+>>>
+>>>
+>>>
+>>> exit()
+
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>
+C:\Users\MEGALADEVI B>cd Desktop\Python\Saranya
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>dir
+ Volume in drive C has no label.
+ Volume Serial Number is A2A9-59D4
+
+ Directory of C:\Users\MEGALADEVI B\Desktop\Python\Saranya
+
+19-08-2023  08:00    <DIR>          .
+19-08-2023  08:00    <DIR>          ..
+05-08-2023  08:14             1,873 class10.txt
+06-08-2023  08:03             6,245 class11.txt
+11-08-2023  06:40               598 class13.txt
+11-08-2023  07:40            14,577 class14.txt
+16-08-2023  07:48            10,520 class18.txt
+17-08-2023  08:49             5,947 class19.txt
+19-08-2023  07:59               373 class20.txt
+30-07-2023  08:34            20,480 class5.txt
+04-08-2023  07:48             3,078 class9.txt
+17-08-2023  07:34               288 class_constructor.py
+19-08-2023  07:33               252 class_inheritance.py
+19-08-2023  07:39               559 class_inherit_multilevel.py
+19-08-2023  07:41               562 class_inherit_multiple.py
+19-08-2023  07:42               628 class_inherit_override.py
+17-08-2023  07:14               303 class_self.py
+17-08-2023  07:26               579 class_self_variable.py
+17-08-2023  07:44               470 class_student.py
+19-08-2023  08:00               143 command_line.py
+11-08-2023  07:22               863 file_operation.py
+09-08-2023  06:50               163 function.py
+09-08-2023  07:06               421 function_args.py
+09-08-2023  07:24               276 function_default_keyword.py
+09-08-2023  07:35               478 function_variable_length.py
+11-08-2023  06:49               299 func_globa_local.py
+16-08-2023  07:48               107 new 2.txt
+              25 File(s)         70,082 bytes
+               2 Dir(s)  67,614,375,936 bytes free
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe command_line
+.py
+Command line args: ['command_line.py']
+Args:  10 20
+Addition:  30
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe command_line
+.py 100 welcome
+Command line args: ['command_line.py', '100', 'welcome']
+Args:  10 20
+Addition:  30
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe command_line
+.py 100 200
+Command line args: ['command_line.py', '100', '200']
+Args:  10 20
+Addition:  30
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe command_line
+.py 100 200
+Command line args: ['command_line.py', '100', '200']
+Args:  100 200
+Addition:  100200
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe command_line
+.py 100 200
+Command line args: ['command_line.py', '100', '200']
+Args:  100 200
+Addition:  300
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>C:\Python34\python.exe -m pdb debug
+ger_check.py
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(1)<module>()
+-> print("Program started.")
+(Pdb) h
+
+Documented commands (type help <topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt
+alias  clear      disable  ignore    longlist  r        source   until
+args   commands   display  interact  n         restart  step     up
+b      condition  down     j         next      return   tbreak   w
+break  cont       enable   jump      p         retval   u        whatis
+bt     continue   exit     l         pp        run      unalias  where
+
+Miscellaneous help topics:
+==========================
+exec  pdb
+
+(Pdb) n
+Program started.
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(3)<module>()
+-> a=100
+(Pdb) n
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(5)<module>()
+-> def myfunc():
+(Pdb) n
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(9)<module>()
+-> print(a)
+(Pdb) n
+100
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(10)<module>()
+-> myfunc()
+(Pdb) n
+This is myfunc function.
+function ended.
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(12)<module>()
+-> print("Program completed.")
+(Pdb) n
+Program completed.
+--Return--
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(12)<module>()->
+None
+-> print("Program completed.")
+(Pdb) n
+--Return--
+> <string>(1)<module>()->None
+(Pdb) n
+The program finished and will be restarted
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(1)<module>()
+-> print("Program started.")
+(Pdb) n
+Program started.
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(3)<module>()
+-> a=100
+(Pdb) n
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(5)<module>()
+-> def myfunc():
+(Pdb) n
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(9)<module>()
+-> print(a)
+(Pdb) n
+100
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(10)<module>()
+-> myfunc()
+(Pdb) n
+This is myfunc function.
+function ended.
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(12)<module>()
+-> print("Program completed.")
+(Pdb) n
+Program completed.
+--Return--
+> c:\users\megaladevi b\desktop\python\saranya\debugger_check.py(12)<module>()->
+None
+-> print("Program completed.")
+(Pdb) q
+
+C:\Users\MEGALADEVI B\Desktop\Python\Saranya>
+
+
+
+
+-----------------
+
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+This is myparent function.
+This is mychild function.
+>>> ================================ RESTART ================================
+>>> 
+This is myparent function.
+This is mychild function.
+This is myparent function.
+>>> ================================ RESTART ================================
+>>> 
+This is myparent function.
+Traceback (most recent call last):
+  File "C:/Users/MEGALADEVI B/Desktop/Python/Saranya/class_inherit_multilevel.py", line 11, in <module>
+    p1.mychild()
+AttributeError: 'Parent' object has no attribute 'mychild'
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "C:/Users/MEGALADEVI B/Desktop/Python/Saranya/class_inherit_multilevel.py", line 1, in <module>
+    class Child(Parent):
+NameError: name 'Parent' is not defined
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+This is myparent function.
+********* Child *********
+This is mychild function.
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+This is myparent function.
+********* Child *********
+This is myparent function.
+This is mychild function.
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+This is mygrandparent function
+This is myparent function.
+********* Child *********
+This is mygrandparent function
+This is myparent function.
+This is mychild function.
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+Traceback (most recent call last):
+  File "C:/Users/MEGALADEVI B/Desktop/Python/Saranya/class_inherit_multiple.py", line 19, in <module>
+    p1.mygrandparent()
+AttributeError: 'Parent' object has no attribute 'mygrandparent'
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+This is myparent function.
+********* Child *********
+This is mygrandparent function
+This is myparent function.
+This is mychild function.
+>>> ================================ RESTART ================================
+>>> 
+****** Grandparent ******
+This is mygrandparent function
+********* Parent ********
+This is myparent function.
+********* Child *********
+This is mygrandparent function
+This is myparent function in child class.
+This is mychild function.
+>>> a=100
+>>> 
+>>> a=200
+>>> 
+>>> 
+>>> 10 + 20
+30
+>>> 'abc' + 'def'
+'abcdef'
+>>> 
+>>> 10 * 5
+50
+>>> 
+>>> "welcome " * 5
+'welcome welcome welcome welcome welcome '
+>>> 
+>>> 
+>>> 
+>>> import os
+>>> os.system("date /T")
+0
+>>> os.system("date /T")
+0
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+Command line args: ['C:/Users/MEGALADEVI B/Desktop/Python/Saranya/command_line.py']
+Args:  10 20
+Addition:  30
+>>> ================================ RESTART ================================
+>>> 
+Program started.
+100
+This is myfunc function.
+function ended.
+Program completed.
+>>> 

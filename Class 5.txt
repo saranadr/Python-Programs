@@ -1,0 +1,659 @@
+Class 5 (30/07)
+----------
+
+Topics: Data Types (Numbers, String)
+Next: Data Types (List, Tuple, Dictionary)
+Exercise: 3, 4, 5, 8
+
+-----
+
+
+Data Types:  (Numbers, String, Tuple - Immutable ,  List, Dictionary - Mutable data type)
+ Numbers - 123 (int),  20.5 (float), True/False (boolean)
+ String  - 'python',  "java",  '''perl''',  """PHP"""
+ Tuple - (123, 40.5, "python")
+ List  - [123, 234.56, "python"]
+ Dictionary - {'id': 123, 'name': 'manoj', 'dept': 'csc'}
+ 
+Sequence: String, List, Tuple - Auto indexing starts with 0.
+
+Retrieval,
+ [start:stop:step] - String, List, Tuple
+ [keyname]   - Dictionary
+
+
+C / C++ / Java,
+int a[5];
+a[0] = 10
+a[1] = 20
+a[2] = 30
+a[3] = 40
+a[4] = 50
+
+
+Common Functions:
+ type() - It will display the data type of the variable
+ len()  - It will return the length of sequence.
+ dir()  - It will list all built in variables and functions related to the data type.
+ help() - It will display the usage of the function.
+ 
+ 
+String Functions,
+ capitalize()
+ count()
+ center()
+ 
+ upper()
+ lower()
+ swapcase()
+ 
+ startswith()
+ endswith()
+ find()
+ index()
+ replace()
+ 
+ isalnum()
+ isalpha()
+ isdigit()
+ isupper()
+ islower()
+ 
+ split()  -> STR -> LIST
+ join()   -> LIST -> STR
+ 
+ title()
+ ljust()
+ rjust()
+ lstrip(0
+ rstrip()
+ strip()
+ 
+ 
+-----------
+
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> print("""welcome to
+python
+program""")
+welcome to
+python
+program
+>>> 
+>>> 
+>>> print("welcome to \
+python \
+program")
+welcome to python program
+>>> 
+>>> 
+>>> 
+>>> name = "python"
+>>> 
+>>> name
+'python'
+>>> name[0]
+'p'
+>>> 
+>>> name[0] = "P"
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    name[0] = "P"
+TypeError: 'str' object does not support item assignment
+>>> 
+>>> name = "Python"
+>>> 
+>>> 
+>>> a = 123
+>>> print(a)
+123
+>>> type(a)
+<class 'int'>
+
+>>> 
+>>> 
+>>> b=20.5
+>>> print(b)
+20.5
+>>> type(b)
+<class 'float'>
+
+>>> 
+>>> 
+>>> status = True
+>>> status
+True
+>>> type(status)
+<class 'bool'>
+>>> 
+>>> 
+>>> status = False
+>>> status
+False
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> mytuple = (10, 20.5, "pythoin")
+>>> 
+>>> mytuple
+(10, 20.5, 'pythoin')
+>>> 
+>>> type(mytuple)
+<class 'tuple'>
+>>> 
+>>> 
+>>> mylist = [10, 20.5, "python"]
+>>> 
+>>> mylist
+[10, 20.5, 'python']
+>>> 
+>>> type(mylist)
+<class 'list'>
+>>> 
+>>> 
+>>> mytuple[0]
+10
+>>> mytuple[1]
+20.5
+>>> 
+>>> len(mytuple)
+3
+>>> 
+>>> mylist[0]
+10
+>>> len(mylist)
+3
+>>> 
+>>> mylist[0] = 123
+>>> 
+>>> mytlist
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    mytlist
+NameError: name 'mytlist' is not defined
+>>> mylist
+[123, 20.5, 'python']
+>>> 
+>>> 
+>>> mytuple[0] = 123
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    mytuple[0] = 123
+TypeError: 'tuple' object does not support item assignment
+>>> 
+>>> 
+>>> mydict = {'id': 123, 'name': 'manoj'}
+>>> mydict
+{'name': 'manoj', 'id': 123}
+>>> 
+>>> type(mydict)
+<class 'dict'>
+>>> 
+>>> len(mydict)
+2
+>>> 
+>>> mydict['id']
+123
+>>> mydict['id'] = 100
+>>> 
+>>> mydict
+{'name': 'manoj', 'id': 100}
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> a
+123
+>>> type(a)
+<class 'int'>
+>>> 
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> 
+>>> dir(b)
+['__abs__', '__add__', '__bool__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getformat__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__int__', '__le__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__pos__', '__pow__', '__radd__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rmod__', '__rmul__', '__round__', '__rpow__', '__rsub__', '__rtruediv__', '__setattr__', '__setformat__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', 'as_integer_ratio', 'conjugate', 'fromhex', 'hex', 'imag', 'is_integer', 'real']
+>>> 
+>>> 
+>>> dir(name)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+>>> help(name.swapcase)
+Help on built-in function swapcase:
+
+swapcase(...) method of builtins.str instance
+    S.swapcase() -> str
+    
+    Return a copy of S with uppercase characters converted to lowercase
+    and vice versa.
+
+>>> 
+>>> 
+>>> dir('')
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> dir(1)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> 
+>>> dir(int)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> 
+>>> dir(float)
+['__abs__', '__add__', '__bool__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getformat__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__int__', '__le__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__pos__', '__pow__', '__radd__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rmod__', '__rmul__', '__round__', '__rpow__', '__rsub__', '__rtruediv__', '__setattr__', '__setformat__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', 'as_integer_ratio', 'conjugate', 'fromhex', 'hex', 'imag', 'is_integer', 'real']
+>>> 
+>>> dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+>>> 
+>>> a
+123
+>>> 
+>>> len(a)
+Traceback (most recent call last):
+  File "<pyshell#115>", line 1, in <module>
+    len(a)
+TypeError: object of type 'int' has no len()
+>>> 
+>>> len(str(a))
+3
+>>> 
+>>> 
+>>> 
+>>> 10 + 20
+30
+>>> 'abc' + 'def'
+'abcdef'
+>>> 
+>>> len(name)
+6
+>>> name.__len__()
+6
+>>> 
+>>> b
+20.5
+>>> 
+>>> b.is_integer()
+False
+>>> 
+>>> b=100.00
+>>> b
+100.0
+>>> b.is_integer()
+True
+>>> 
+>>> name
+'Python'
+>>> 
+>>> dir(name)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+>>> 
+>>> mystr = "WELCOME to PYTHON program"
+>>> 
+>>> mystr
+'WELCOME to PYTHON program'
+>>> 
+>>> name
+'Python'
+>>> 
+>>> 
+>>> mystr.capitalize()
+'Welcome to python program'
+>>> 
+>>> mystr.count("o")
+2
+>>> 
+>>> name.center(25)
+'          Python         '
+>>> name.center(25, "*")
+'**********Python*********'
+>>> 
+>>> 
+>>> print(name.center(25, "*"))
+**********Python*********
+>>> 
+>>> 
+>>> 
+>>> print(name.center(25, "123"))
+Traceback (most recent call last):
+  File "<pyshell#159>", line 1, in <module>
+    print(name.center(25, "123"))
+TypeError: The fill character must be exactly one character long
+>>> print(name.center(25, "1"))
+1111111111Python111111111
+>>> print(name.center(25, 1))
+Traceback (most recent call last):
+  File "<pyshell#161>", line 1, in <module>
+    print(name.center(25, 1))
+TypeError: The fill character cannot be converted to Unicode
+>>> 
+>>> name.center(20)
+'       Python       '
+>>> name.center('20')
+Traceback (most recent call last):
+  File "<pyshell#164>", line 1, in <module>
+    name.center('20')
+TypeError: 'str' object cannot be interpreted as an integer
+>>> 
+>>> name
+'Python'
+>>> 
+>>> a
+123
+>>> a.center(20)
+Traceback (most recent call last):
+  File "<pyshell#169>", line 1, in <module>
+    a.center(20)
+AttributeError: 'int' object has no attribute 'center'
+>>> 
+>>> str(a).center(20)
+'        123         '
+>>> 
+>>> 
+>>> name
+'Python'
+
+>>> 
+>>> mystr
+'WELCOME to PYTHON program'
+>>> 
+>>> mystr.upper()
+'WELCOME TO PYTHON PROGRAM'
+>>> 
+>>> mystr.lower()
+'welcome to python program'
+>>> 
+>>> mystr.swapcase()
+'welcome TO python PROGRAM'
+>>> 
+>>> 
+>>> mystr
+'WELCOME to PYTHON program'
+>>> 
+>>> mystr.count("o")
+2
+>>> 
+>>> mystr.lower().count("o")
+4
+>>> 
+>>> mystr
+'WELCOME to PYTHON program'
+>>> mystr.lower()
+'welcome to python program'
+>>> 
+>>> mystr.count()
+Traceback (most recent call last):
+  File "<pyshell#194>", line 1, in <module>
+    mystr.count()
+TypeError: count() takes at least 1 argument (0 given)
+>>> mystr.count("o")
+2
+>>> 
+>>> mystr.count("o").lower()
+Traceback (most recent call last):
+  File "<pyshell#197>", line 1, in <module>
+    mystr.count("o").lower()
+AttributeError: 'int' object has no attribute 'lower'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> mystr
+'WELCOME to PYTHON program'
+>>> 
+>>> 
+>>> mystr = mystr.lower()
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> 
+>>> 
+>>> mystr.startswith("welcome")
+True
+>>> 
+>>> mystr.startswith("welcome1")
+False
+>>> 
+>>> mystr.endswith("program")
+True
+>>> mystr.endswith("progra")
+False
+>>> 
+>>> 
+>>> mystr.find("python")
+11
+>>> 
+>>> mystr.index("python")
+11
+>>> mystr.find("python1")
+-1
+>>> mystr.index("python1")
+Traceback (most recent call last):
+  File "<pyshell#223>", line 1, in <module>
+    mystr.index("python1")
+ValueError: substring not found
+>>> 
+>>> 
+>>> mystr
+'welcome to python program'
+>>> mystr.find("o")
+4
+>>> 
+>>> mystr.find("o", 10)
+15
+>>> mystr.find("o", 10, 12)
+-1
+>>> 
+>>> dir(mystr)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> 
+>>> mystr.rfind("python")
+11
+>>> mystr.rfind("o")
+20
+>>> mystr.find("o")
+4
+>>> 
+>>> mystr.rindex("o")
+20
+>>> 
+>>> mystr
+'welcome to python program'
+>>> mystr.index("o", 10)
+15
+>>> 
+>>> mystr
+'welcome to python program'
+>>> mystr.replace("o", "OOOOO")
+'welcOOOOOme tOOOOO pythOOOOOn prOOOOOgram'
+>>> 
+>>> mystr.replace("python", "JAVA")
+'welcome to JAVA program'
+>>> 
+>>> 
+>>> help(mystr.isidentifier)
+Help on built-in function isidentifier:
+
+isidentifier(...) method of builtins.str instance
+    S.isidentifier() -> bool
+    
+    Return True if S is a valid identifier according
+    to the language definition.
+    
+    Use keyword.iskeyword() to test for reserved identifiers
+    such as "def" and "class".
+
+>>> 
+>>> type.isidentifier()
+Traceback (most recent call last):
+  File "<pyshell#255>", line 1, in <module>
+    type.isidentifier()
+AttributeError: type object 'type' has no attribute 'isidentifier'
+>>> "type".isidentifier()
+True
+>>> 
+>>> name
+'Python'
+>>> name.isidentifier()
+True
+>>> 
+>>> name = "manoj"
+>>> name.isidentifier()
+True
+>>> "type1".isidentifier()
+True
+>>> str.isidentifier()
+Traceback (most recent call last):
+  File "<pyshell#264>", line 1, in <module>
+    str.isidentifier()
+TypeError: descriptor 'isidentifier' of 'str' object needs an argument
+>>> "str".isidentifier()
+True
+>>> 
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> name
+'manoj'
+>>> 
+>>> name.isalnum()
+True
+>>> mystr.isalnum()
+False
+>>> 
+>>> name.isalpha()
+True
+>>> name.isdigit()
+False
+>>> 
+>>> name.islower()
+True
+>>> name.isupper()
+False
+>>> 
+>>> name.istitle()
+False
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> mystr.title()
+'Welcome To Python Program'
+>>> 
+>>> 
+>>> dir(mystr)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> mystr.split(" ")
+['welcome', 'to', 'python', 'program']
+>>> mystr.split("o")
+['welc', 'me t', ' pyth', 'n pr', 'gram']
+>>> 
+>>> mystr.split()
+['welcome', 'to', 'python', 'program']
+>>> 
+>>> mystr
+'welcome to python program'
+>>> mystr = "welcome to python\tprogram\nend"
+>>> 
+>>> mystr
+'welcome to python\tprogram\nend'
+>>> mystr.split(" ")
+['welcome', 'to', 'python\tprogram\nend']
+>>> mystr.split()
+['welcome', 'to', 'python', 'program', 'end']
+>>> 
+>>> 
+>>> 
+>>> mystr
+'welcome to python\tprogram\nend'
+>>> 
+>>> mystr = "welcome,to,python"
+>>> 
+>>> mystr
+'welcome,to,python'
+>>> 
+>>> mystr.split()
+['welcome,to,python']
+>>> mystr.split(",")
+['welcome', 'to', 'python']
+>>> 
+>>> mystr = "welcome to python program"
+>>> mystr
+'welcome to python program'
+>>> mystr.split(" ")
+['welcome', 'to', 'python', 'program']
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> words = mystr.split(" ")
+>>> 
+>>> words
+['welcome', 'to', 'python', 'program']
+>>> 
+>>> 
+>>> "-".join(words)
+'welcome-to-python-program'
+>>> 
+>>> " ".join(words)
+'welcome to python program'
+>>> "--->>>".join(words)
+'welcome--->>>to--->>>python--->>>program'
+>>> 
+>>> "".join(words)
+'welcometopythonprogram'
+>>> 
+>>> 
+>>> mystr
+'welcome to python program'
+>>> 
+>>> 
+>>> name
+'manoj'
+>>> 
+>>> 
+>>> name.ljust(20)
+'manoj               '
+>>> name.rjust(20)
+'               manoj'
+>>> name.center(20)
+'       manoj        '
+>>> 
+>>> 
+>>> name.ljust(20, "-")
+'manoj---------------'
+>>> 
+>>> 
+>>> 
+>>> name = "       manoj     "
+>>> name
+'       manoj     '
+>>> 
+>>> 
+>>> name.lstrip()
+'manoj     '
+>>> 
+>>> name.rstrip()
+'       manoj'
+>>> 
+>>> name.strip()
+'manoj'
+>>> 
+>>> 
+ 

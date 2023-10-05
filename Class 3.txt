@@ -1,0 +1,133 @@
+ Python 3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print('welcome to python pro\ngram')
+welcome to python pro
+gram
+>>> print('wel\tcome to python pro\ngram')
+wel	come to python pro
+gram
+>>> 
+>>> print('w\telcome to python pro\ngram')
+w	elcome to python pro
+gram
+>>> print('welcome to p\tython pro\ngram')
+welcome to p	ython pro
+gram
+>>> print('w\telcome to python pro\ngram')
+w	elcome to python pro
+gram
+>>> print('w\telcome to python\\ pro\ngram')
+w	elcome to python\ pro
+gram
+>>> print('w\telcome to "python\\ pro\ngram')
+w	elcome to "python\ pro
+gram
+>>> print('w\telcome to "python\\ \'pro\ngram')
+w	elcome to "python\ 'pro
+gram
+>>> print("w\telcome to \"python\\ 'pro\ngram")
+w	elcome to "python\ 'pro
+gram
+>>> 
+>>> a = 100
+>>> a
+100
+>>> type (a)
+<class 'int'>
+>>> b=30.5
+>>> b
+30.5
+>>> type(b)
+<class 'float'>
+>>> name='Saranya'
+>>> name
+'Saranya'
+>>> type(name)
+<class 'str'>
+>>> print(a)
+100
+>>> print('a')
+a
+>>> #the value of a is 100
+>>> print('the value of a is' a)
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print('the value of a is')
+the value of a is
+>>> # , + % .format
+>>> print('the value of a is',a)
+the value of a is 100
+>>> print('the value of b is',b)
+the value of b is 30.5
+>>> print('the value of name is',name)
+the value of name is Saranya
+>>> print('the value of name is'+name)
+the value of name isSaranya
+>>> print('the value of name is'   +    name)
+the value of name isSaranya
+>>> print('the value of name is '+name)
+the value of name is Saranya
+>>> print('the value of a is '+a)
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    print('the value of a is '+a)
+TypeError: can only concatenate str (not "int") to str
+10+20
+30
+'abc'+'def'
+'abcdef'
+10+'abc'
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    10+'abc'
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print('the value of a is '+str(a))
+the value of a is 100
+print('the value of b is ',+str(b))
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    print('the value of b is ',+str(b))
+TypeError: bad operand type for unary +: 'str'
+print('the value of b is '+str(b))
+the value of b is 30.5
+#the value of a is 100 and b is 30.5 and name is saranya
+
+
+
+print('the value of a is',a)
+the value of a is 100
+print('the value of a is',a, 'and b is',b)
+the value of a is 100 and b is 30.5
+print('the value of a is',a, 'and b is',b, 'and name is',name)
+the value of a is 100 and b is 30.5 and name is Saranya
+print('the value of a is '+str(a)+ 'and b is '+str(b)+ 'and name is '+name)
+the value of a is 100and b is 30.5and name is Saranya
+print('the value of a is '+str(a)+ ' and b is '+str(b)+ ' and name is '+name)
+the value of a is 100 and b is 30.5 and name is Saranya
+
+print('the value of a is %d and b is %f and name is %s'%(a,b,name))
+the value of a is 100 and b is 30.500000 and name is Saranya
+print('the value of a is %d and b is %.1f and name is %s'%(a,b,name))
+the value of a is 100 and b is 30.5 and name is Saranya
+print('the value of a is %d and b is %.2f and name is %s'%(a,b,name))
+the value of a is 100 and b is 30.50 and name is Saranya
+print('the value of a is {0} and b is {1} and name is {2}'.format(a,b,name))
+the value of a is 100 and b is 30.5 and name is Saranya
+print('the value{2} of a is {0} and b is {1} and name is {2}'.format(a,b,name))
+the valueSaranya of a is 100 and b is 30.5 and name is Saranya
+
+
+print('the value of a is',a, 'and b is',b, 'and name is',name)
+the value of a is 100 and b is 30.5 and name is Saranya
+print('the value of a is '+str(a)+ ' and b is '+str(b)+ ' and name is '+name)
+the value of a is 100 and b is 30.5 and name is Saranya
+print('the value of a is %d and b is %.2f and name is %s'%(a,b,name))
+the value of a is 100 and b is 30.50 and name is Saranya
+print('the value of a is {0} and b is {1} and name is {2}'.format(a,b,name))
+the value of a is 100 and b is 30.5 and name is Saranya
+
+
+b=30.567
+print('the value of a is %d and b is %.2f and name is %s'%(a,b,name))
+the value of a is 100 and b is 30.57 and name is Saranya
+print('the value of a is',a, 'and b is',b, 'and name is',name)
+the value of a is 100 and b is 30.567 and name is Saranya

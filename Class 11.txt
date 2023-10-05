@@ -1,0 +1,345 @@
+Class 11 (06/08)
+----------
+
+Topics: Pending functions, Sets & Looping techniques
+Next: Functions
+Exercise: 6, 15
+
+-----
+Functions:
+----------
+ type()
+ len()
+ dir()
+ help()
+ del()
+ 
+ min()
+ max()
+ pow()
+ abs()
+ round()
+ 
+https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/2560px-ASCII-Table-wide.svg.png
+
+
+Sets: 
+  Unordered collection of unique values.  
+  s1 -> A B C D E
+  s2 ->       D E F G
+
+ s1 | s2 - union
+ s1 & s2 - intersect
+ s1 - s2 - Minus
+ s1 ^ s2 - Non Common
+ 
+ 
+Looping Techniques:
+ enumerate() - It is used to get index and value from the sequence
+ zip()  - It is used to process more than one sequence simultaneously
+ 
+List Comprehension: 
+ It will process/calculation and return value as list.
+ 
+ 
+-----------
+
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> abs(-123)
+123
+>>> 
+>>> min('python')
+'h'
+>>> max('python')
+'y'
+>>> 
+>>> 
+>>> ord("a")
+97
+>>> ord("A")
+65
+>>> 
+>>> chr(65)
+'A'
+>>> chr(657)
+'ʑ'
+>>> chr(67)
+'C'
+>>> 
+>>> 
+>>> min([10, 20, 5, 15])
+5
+>>> max([10, 20, 5, 15])
+20
+>>> 
+>>> min(123, 20)
+20
+>>> min(123, 20, 15, 5)
+5
+>>> max(123, 20, 15, 5)
+123
+>>> 
+>>> min('python', 'welcome')
+'python'
+>>> max('python', 'welcome')
+'welcome'
+>>> 
+>>> min(123)
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    min(123)
+TypeError: 'int' object is not iterable
+>>> min(123, 'python')
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    min(123, 'python')
+TypeError: unorderable types: str() < int()
+>>> 
+>>> 
+>>> 
+>>> 
+>>> pow(10, 2)
+100
+>>> 
+>>> 10 ** 2
+100
+>>> 
+>>> 
+>>> round(123.3453636, 3)
+123.345
+>>> round(123.3453636, 2)
+123.35
+>>> 
+>>> 
+>>> 
+>>> ceil(12.5)
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    ceil(12.5)
+NameError: name 'ceil' is not defined
+>>> 
+>>> 
+>>> import math
+>>> 
+>>> ceil(12.5)
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    ceil(12.5)
+NameError: name 'ceil' is not defined
+>>> 
+>>> math.ceil(12.5)
+13
+>>> 
+>>> math.floor(12.5)
+12
+>>> math.floor(12.9)
+12
+>>> math.ceil(12.1)
+13
+>>> 
+>>> 
+>>> math.sqrt(100)
+10.0
+>>> 
+>>> 
+>>> dir(math)
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+>>> 
+>>> 
+>>> math.pi
+3.141592653589793
+>>> 
+>>> 
+>>> print(__builtins__)
+<module 'builtins' (built-in)>
+>>> print(__builtins__())
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    print(__builtins__())
+TypeError: 'module' object is not callable
+>>> 
+>>> 
+>>> math.factorial(5)
+120
+>>> math.pow(10, 2)
+100.0
+>>> 
+>>> 10 ** 2
+100
+>>> 
+>>> pow(10, 2)
+100
+>>> 
+>>> 
+>>> 
+>>> 
+>>> mydict = {'id': 123, 'name': 'manoj'}
+>>> 
+>>> mydict.keys()
+dict_keys(['name', 'id'])
+>>> 'id' in mydict.keys()
+True
+>>> 
+>>> 
+>>> 
+>>> 
+>>> s1 = set(['A', 'B' ,'C', 'D', 'E', 'C', 'E'])
+>>> 
+>>> s1
+{'E', 'A', 'C', 'D', 'B'}
+>>> 
+>>> s2 = set(['D', 'E', 'F', 'G', 'D', 'F'])
+>>> 
+>>> s2
+{'E', 'G', 'D', 'F'}
+>>> 
+>>> 
+>>> s1 | s2
+{'D', 'A', 'B', 'E', 'G', 'C', 'F'}
+>>> s1 & s2
+{'E', 'D'}
+>>> 
+>>> 
+>>> s1 - s2
+{'A', 'C', 'B'}
+>>> 
+>>> s2 - s1
+{'G', 'F'}
+>>> 
+>>> s1 ^ s2
+{'A', 'B', 'G', 'C', 'F'}
+>>> 
+>>> s1
+{'E', 'A', 'C', 'D', 'B'}
+>>> 
+>>> 
+>>> list(s1)
+['E', 'A', 'C', 'D', 'B']
+>>> 
+>>> mylist
+Traceback (most recent call last):
+  File "<pyshell#110>", line 1, in <module>
+    mylist
+NameError: name 'mylist' is not defined
+>>> 
+>>> s1 = set('python')
+>>> s1
+{'o', 'y', 'h', 't', 'p', 'n'}
+>>> 
+>>> 
+>>> dir(s1)
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> 
+>>> 
+>>> s1
+{'o', 'y', 'h', 't', 'p', 'n'}
+>>> s1.add('z')
+>>> s1
+{'o', 'y', 'h', 't', 'z', 'p', 'n'}
+>>> s1.pop()
+'o'
+>>> 
+>>> 
+>>> 
+>>> name = 'python'
+>>> 
+>>> name
+'python'
+>>> 
+>>> for i in name:
+	print(i)
+
+	
+p
+y
+t
+h
+o
+n
+>>> 
+>>> 
+>>> for i in range(len(name)):
+	print(i, name[i])
+
+	
+0 p
+1 y
+2 t
+3 h
+4 o
+5 n
+>>> 
+>>> for i,v in enumerate(name):
+	print(i, v)
+
+	
+0 p
+1 y
+2 t
+3 h
+4 o
+5 n
+>>> 
+>>> ques = ['id', 'name', 'location']
+>>> ans = (123, 'manoj', 'chennai')
+>>> 
+>>> for q,a in zip(ques, ans):
+	print(q, a)
+
+	
+id 123
+name manoj
+location chennai
+>>> for q,a in zip(ques, ans):
+	print("Your {0} is {1}".format(q, a))
+
+	
+Your id is 123
+Your name is manoj
+Your location is chennai
+>>> 
+>>> 
+>>> for i,j,k in zip('apple', 'orange', 'kiwi'):
+	print(i, j, k)
+
+	
+a o k
+p r i
+p a w
+l n i
+>>> for i,j,k in zip('apple', 'orange', 'banana'):
+	print(i, j, k)
+
+	
+a o b
+p r a
+p a n
+l n a
+e g n
+>>> 
+>>> 
+>>> 
+>>> 
+>>> mylist = []
+>>> 
+>>> for i in range(1, 11):
+	mylist.append(i * 5)
+
+	
+>>> 
+>>> mylist
+[5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+>>> 
+>>> 
+>>> mylist1 = [i*5 for i in range(1, 11)]
+>>> 
+>>> mylist1
+[5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+>>> mylist2 = [i*5 for i in range(1, 11) if i!=5]
+>>> 
+>>> mylist2
+[5, 10, 15, 20, 30, 35, 40, 45, 50]
+>>> 
+>>> 

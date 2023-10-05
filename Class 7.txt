@@ -1,0 +1,145 @@
+Class 7 2-8-23
+Topic: data type - dictionary
+Next: data type wrap up, sub level, condition
+Exercise: 
+
+
+Dictionary
+>>> mydict={'id':123,'name':'Sara'}
+>>> mydict
+{'id': 123, 'name': 'Sara'}
+>>> len(mydict)
+2
+>>> type(mydict)
+<class 'dict'>
+>>> mydict['id']
+123
+>>> mydict['name']
+'Sara'
+>>> mydict['id']=100
+>>> mydict
+{'id': 100, 'name': 'Sara'}
+>>> mydict['dept']=cse
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    mydict['dept']=cse
+NameError: name 'cse' is not defined
+>>> mydict['dept']='cse'
+>>> mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse'}
+>>> dir(mydict)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> mydict['id']
+100
+>>> mydict.get('id')
+100
+>>> mydict.get('id1')
+>>> mydict['id1']
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    mydict['id1']
+KeyError: 'id1'
+mydict.update({'location':'chennai','building':'flats'})
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'location': 'chennai', 'building': 'flats'}
+mydict.keys()
+dict_keys(['id', 'name', 'dept', 'location', 'building'])
+mydict.values()
+dict_values([100, 'Sara', 'cse', 'chennai', 'flats'])
+mydict.items()
+dict_items([('id', 100), ('name', 'Sara'), ('dept', 'cse'), ('location', 'chennai'), ('building', 'flats')])
+mylist
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    mylist
+NameError: name 'mylist' is not defined. Did you mean: 'mydict'?
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'location': 'chennai', 'building': 'flats'}
+mydict.pop()
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    mydict.pop()
+TypeError: pop expected at least 1 argument, got 0
+mydict.popitem()
+('building', 'flats')
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'location': 'chennai'}
+mydict.pop('location')
+'chennai'
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse'}
+dir(mydict)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+mydict.setdefault('id',200)
+100
+mydict.setdefault('house',200)
+200
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'house': 200}
+mydict.fromkeys(['a','b'])
+{'a': None, 'b': None}
+mydict.fromkeys(['a','id'])
+{'a': None, 'id': None}
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'house': 200}
+dict.fromkeys(['a','id'])
+{'a': None, 'id': None}
+dict.fromkeys(['a','id'],100)
+{'a': 100, 'id': 100}
+name='saranya'
+name
+'saranya'
+name=''
+name
+''
+del(name)
+name
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    name
+NameError: name 'name' is not defined
+mylist=[10,20,30,40]
+mylist
+[10, 20, 30, 40]
+mylist=[]
+mylist
+[]
+del(mylist)
+mylist
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    mylist
+NameError: name 'mylist' is not defined. Did you mean: 'mydict'?
+mytuple={10,20,30}
+mytuplt=(10,20,30)
+mytuplt
+(10, 20, 30)
+mytuplt=()
+mytuplt
+()
+mytuple
+{10, 20, 30}
+type(mytuple)
+<class 'set'>
+int('100')
+100
+int(20.67)
+20
+float('100')
+100.0
+float(67)
+67.0
+str(100)
+'100'
+list((10,20))
+[10, 20]
+tuple([10,20])
+(10, 20)
+dict([(10,20), (30,40)])
+{10: 20, 30: 40}
+mydict
+{'id': 100, 'name': 'Sara', 'dept': 'cse', 'house': 200}
+mydict.items
+<built-in method items of dict object at 0x105441d40>
+mydict.items()
+dict_items([('id', 100), ('name', 'Sara'), ('dept', 'cse'), ('house', 200)])

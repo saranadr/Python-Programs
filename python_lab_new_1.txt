@@ -1,0 +1,315 @@
+Exercises:
+----------
+
+1. Write a program to display the below message (using single and double quotes)
+   Output:
+    This\\t is my<TAB> 'first' program\ in "PYTHON"<NEWLINE>
+
+
+2. Declare 3 variables and display message as below using 4 methods (, + % format)
+    a=10; b=20.5; name='abcd'
+   Output:
+    The value of 'a' is 10 and "b" is 20.5 and name is "abcd"
+
+
+3. Declare a string and display below output.
+    mystr = 'welcome to python program'
+   Output:
+    Given String   : welcome to python program
+    Reversed string: margorp nohtyp ot emoclew
+
+    First 7 chars  : welcome
+    Last 7 chars   : program
+    Skip first 8 chars : to python program
+    Skip last 8 chars  : welcome to python 
+    Given Language     : python
+    Words in string    : ['welcome', 'to', 'python', 'program']
+    Joined Words       : welcome-to-python-program
+    
+
+4. Write a progm to get Emp Id, Employee Name and Salary from user  and display the given details.
+   Input:
+    Enter the Employee Id  : <12345>
+    Enter the Employee Name: <Ramesh>
+    Enter the Department   : <INFORMATION technology>
+   Output:
+    ***** Employee Details *****
+    Emp ID  : 12345
+    Emp Name: RAMESH
+    Reversed Name: hsemaR
+    Emp Dept: information TECHNOLOGY 
+    Length of Dept: 22
+    ****************************
+
+
+5. Write a program to get two lines as input from the user and display the concatenated output.
+   - Remove first 3 chars in str-1 and remove last 4 chars in str-2
+   Input:
+    Enter the string1 : Welcome to Python
+    Enter the string2 : This is my first program
+   Output:
+    come to Python. This is my first pro
+
+
+6. Write a program to get document from the user and do the find and replace operation.
+    Input:
+     Enter the content:
+      welcome to python
+      This is first line
+      This is
+      my second line
+     Enter the search string :  is
+     Enter the replace string:  IISS
+
+   Output:
+    Given Content: <the-given-input-message>
+    Search string: is
+    Replace string: IISS
+    Result:
+     ThIISS IISS first line
+     ThIISS IISS
+
+      
+7. Write a program to get lines from the user and display below output.
+   Input:
+    Enter the lines:
+     This is my first line
+     This is my
+     second line
+    ^D
+   Output:
+    Lines: This is my first line\nThis is my\nsecond line\n
+    Number of lines: 3
+    Number of words: 10
+    Number of chars: 45
+    Joining Words:
+     This-is-my-first-line
+     This-is-my
+     second-line
+    
+
+8. Write a program to get a line as input from user and do below operations.
+   - Check whether the string begins with 'welcome' and ends with 'python' (case-insensitive check)
+   - Find the matched position of search string and return matched position if exists.
+   - Replace the line with given replace string
+   Input:
+    Enter the line:  <WELcome to python program>
+    Enter the search string:  <python>
+    Enter the replace string: <PHP>
+
+   Output:
+    The given line: WELcome to python program
+    Starts with 'welcome': True
+    Ends with 'python'   : False
+    Search string : python
+    Matched position: True [Position: 11]
+    Replace string: PHP
+    Replaced line : WELcome to PHP program
+
+
+9. Write a program to do below operations on list.
+   mylist = [10, 20, 30]
+   Output:
+    Given List             : [10, 20, 30]
+    Elements in the list   :  3
+    Add value at last      : [10, 20, 30, 40]
+    Added 2 values at last : [10, 20, 30, 40, 50, 60]
+    Add value at 2nd index :  [10, 20, 100, 30, 40, 50, 60]
+    Remove 2 values at last: [10, 20, 100, 30, 40]
+    Remove 2nd element     : [10, 20, 30, 40]
+    Remove first 2 elements: [30, 40]
+    Empty the list         : []
+    Remove the list variable from memory:  <ERROR-MESSAGE>
+
+
+10. Write a program to get a number from the user and check whether the number is between 100 and 150
+     [OR] between 200 and 250.
+    Input:
+     Enter the number: 125
+    Output:
+     The given number [125] is between 100 and 150.
+
+
+11. Write a program to find the given number is odd or even number ?
+    Input:
+     Enter the number: 15
+    Output:
+     The given number(15) is odd number.
+	 
+	 
+12. Write a program to check whether the given string is a palindrome ?
+    Input:
+     Enter the string: racecar
+    Output:
+     The given string 'racecar' is a palindrome.
+	 
+
+13. Write a program to display multiples of given number between 1 to 100. (2 types: using for and while loop)
+    - Also print the reverse of numbers between given range
+    Input:
+     Enter the number: 5
+    Output:
+     Result: 5, 10, 15, ... 100
+     Reverse: 100, 95, 90, ... 5
+
+
+14. Write a program to display multiplication table of given number with specified range using loops.
+    Input:
+     Enter the number for table: 5
+     Enter the number for table limit: 4
+
+    Output:
+     Multiplication Table of 5
+     *************************
+     1 * 5 = 5
+     2 * 5 = 10
+     3 * 5 = 15
+     4 * 5 = 20
+
+
+15. Write a program to design a calculator. It should ask for inputs from user until user exit the program.
+    - 2 types (using nested-if and functions)
+    Input:
+     ***** Welcome to Calculator ******
+     Please enter the numbers and select operation:
+     1. Addition
+     2. Subtraction
+     3. Multiplication
+     4. Division
+     Choose the option [1-4] : 1
+     Enter the number1 : 10
+     Enter the number2 : 20
+
+    Output:
+     The addition of given two numbers (10, 20) are: 30
+
+
+16. Write a program to maintain server/network details in a dictionary and do below operations.
+    Input:
+     ***** Server Maintenance Program *****
+     1. Add a New Server 
+     2. Remove Server   
+     3. Display Available Servers
+     4. Search a Server 
+     5. Sort Servers
+     6. Clear Servers
+     7. Exit program
+     Choose your option [1-7]:
+
+
+17. Write a program to display below details.
+    Logged in User: <username>
+    Server Name: <hostname>
+    IP Address: <ip-address>
+    Current Directory: <current-directory>
+    Current Date: <DD-MON-YYYY>
+    System Date: Saturday, September 25, 2016 00:00:00 AM PDT 
+
+
+18. Write a program to get file name as input from user and display properties of a file.
+    Input:
+     Enter the filename:  sample.txt
+    Output:
+     Given filename: sample.txt
+     ***** File Properties *****
+     File Exist: True
+     Is File   : True
+     File Size : 20
+     Created Time: <date>
+     File Content: <contents of the file here>
+
+
+19. Write a program to create file inside given directory.
+    Input:
+     Enter the directory name: MYFOLDER
+     Enter the filename      : myfile.txt
+     Enter the file content  :
+      This is first line
+      My second
+      line
+
+    Output:
+     Current directory:  <path>
+     Files in directory: <files-list>
+     Folder created successfully.
+     File created successfully.
+     Contents inside file: <contents-of-file>
+
+
+20. Write a program to print command line arguments along with filename.
+    - The script should contain 2 command line args.
+    - The two args should be valid numbers. (use exceptions)
+    - Do the addition of two numbers and display the output.
+
+   cmd> python  myscript.py  100 200
+   Output:
+    Filename: myscript.py
+    Number of args: 3
+    The addition value of 100 and 200 is 300
+
+
+21. Write a program to print numbers with decimal points (multiple level loop)
+    Input:
+     Enter the number: 2
+     Enter the precision: 5
+    Output:
+     1.1 1.2 1.3 1.4 1.5 2.1 2.2 2.3 2.4 2.5 
+
+
+22. Write a program to find the longest line in the given string ?
+    Input:
+     Enter the lines:
+      welcome to python
+      this is the longest line
+      this is my first line
+      this is second line
+      short line here
+      this is the end line
+    Output:
+     Given lines: [above lines here]
+     Longest line: this is the longest line [Length: 24]
+
+
+23. Write a program to calculate the sum of given numbers?
+    Input:
+     Enter the limit/count for numbers: 3
+     Enter the number 1: 10
+     Enter the number 2: 20
+     Enter the number 3: 30
+    Output:
+     The sum of given numbers [10 20 30] is: 60
+
+	
+24. Write a program to print number histogram and get the sum of all digits in a number ?
+    Input:
+     Enter the number for histogram: 5826
+    Output:
+     The given number: 5826
+     Result,
+     *****
+     ********
+     **
+     ******
+    The sum of digits in number: 21
+	
+
+25. Write a program to count the number of characters(occurences) in a string.
+    Input:
+     Enter the string:  welcome to python program
+    Output:
+        ->  3
+     a  ->  1
+     c  ->  1
+     e  ->  2
+     g  ->  1
+     h  ->  1
+     m  ->  2
+     l  ->  1
+     o  ->  4
+     n  ->  1
+     p  ->  2
+     r  ->  2
+     t  ->  2
+     w  ->  1
+     y  ->  1
+

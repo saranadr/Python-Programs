@@ -1,0 +1,184 @@
+Class 10 (05/08)
+Class 10 (05/08)
+----------
+
+Topics: while loop, loop control statement
+Next: 
+Exercise: 
+
+-----
+
+loop control statements
+Break
+Continue
+Pass
+
+For loop: used to retrieve values from the sequence one by one
+While loop: it will execute until the condition is true or satisfied
+
+i=1 // initialisation
+While i<=5: //condition
+    Print i
+    i+=1  //increment or decrement
+
+-----
+
+
+>>> 
+============= RESTART: /Users/saraathipatla/Desktop/Python/Ex10.py =============
+Enter the number: 40
+The given number [40] is neither between 100 and 150 nor between 200 and 250.
+>>> 
+============= RESTART: /Users/saraathipatla/Desktop/Python/Ex11.py =============
+Enter the number: 56
+The given number(56) is even number.
+>>> 
+============= RESTART: /Users/saraathipatla/Desktop/Python/Ex12.py =============
+Enter the string: racecar
+The given string 'racecar' is a palindrome.
+>>> palindrome=False
+>>> mystr='madam'
+>>> for i in range(len(mystr)):
+...     if mystr[i]!=mystr[len(mystr)-i]:
+...         palindrome=False
+... 
+...         
+Traceback (most recent call last):
+  File "<pyshell#6>", line 2, in <module>
+    if mystr[i]!=mystr[len(mystr)-i]:
+IndexError: string index out of range
+>>> palindrome=True
+>>> for i in range(len(mystr)):
+...     if mystr[i]!=mystr[len(mystr)-(i+1)]:
+...         palindrome=False
+... 
+...         
+>>> palindrome
+True
+mystr='years'
+for i in range(len(mystr)):
+    if mystr[i]!=mystr[len(mystr)-(i+1)]:
+        palindrome=False
+
+        
+palindrome
+False
+mystr='python'
+for i in mystr:
+    print(i)
+
+    
+p
+y
+t
+h
+o
+n
+for i in mystr:
+    if i=='h': break
+    print(i)
+
+    
+p
+y
+t
+for i in mystr:
+    if i=='h': continue
+    print(i)
+
+    
+p
+y
+t
+o
+n
+for i in mystr:
+    if i=='h': pass 
+    print(i)
+
+    
+p
+y
+t
+h
+o
+n
+i=1
+while i<=5:
+    print(i)
+    i+=1
+
+    
+1
+2
+3
+4
+5
+i
+6
+i=5
+while i>=1:
+    print(i)
+    i-=1
+
+    
+5
+4
+3
+2
+1
+i=1
+while i<=100:
+    if i%5==0: print(i)
+    i+=1
+
+    
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+i=1
+while i<=100:
+    if i%5==0:
+        print(i)
+        i+=5
+    else:
+        i+=1
+
+        
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100

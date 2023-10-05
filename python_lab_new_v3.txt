@@ -1,0 +1,668 @@
+Exercises:
+----------
+
+1. Write a program to display the below message (using single and double quotes)
+   Output:
+    This\\t is my[TAB] 'first' program\ in "PYTHON"<NEWLINE>
+
+
+2. Declare 3 variables and display message as below using 4 methods (, + % format)
+    a=10; b=20.5; name='abcd'
+   Output:
+    The value of 'a' is 10 and "b" is 20.5 and name is "abcd"
+
+
+3. Declare a string and display below output.
+    mystr = 'welcome to python program'
+   Output:
+    Given String   : welcome to python program
+    Reversed string: margorp nohtyp ot emoclew
+    First 7 chars  : welcome
+    Last 7 chars   : program
+    Skip first 8 chars : to python program
+    Skip last 8 chars  : welcome to python 
+    Given Language     : python
+    Words in string    : ['welcome', 'to', 'python', 'program']
+    Joined Words       : welcome-to-python-program
+    
+
+4. Write a progm to get Emp Id, Employee Name and Salary from user  and display the given details.
+   Input:
+    Enter the Employee Id  : <12345>
+    Enter the Employee Name: <Ramesh>
+    Enter the Department   : <INFORMATION technology>
+   Output:
+    ***** Employee Details *****
+    Emp ID  : 12345
+    Emp Name: RAMESH
+    Reversed Name: hsemaR
+    Emp Dept: information TECHNOLOGY 
+    Length of Dept: 22
+    ****************************
+
+
+5. Write a program to get two lines as input from the user and display the concatenated output.
+   - Remove first 3 chars in str-1 and remove last 4 chars in str-2
+   Input:
+    Enter the string1 : Welcome to Python
+    Enter the string2 : This is my first program
+   Output:
+    come to Python. This is my first pro
+
+
+6. Write a program to get document from the user and do the find and replace operation.
+    Input:
+     Enter the content:
+      welcome to python
+      This is first line
+      This is
+      my second line
+     Enter the search string :  is
+     Enter the replace string:  IISS
+
+   Output:
+    Given Content: <the-given-input-message>
+    Search string: is
+    Replace string: IISS
+    Result:
+     ThIISS IISS first line
+     ThIISS IISS
+
+      
+7. Write a program to get lines from the user and display below output.
+   Input:
+    Enter the lines:
+     This is my first line
+     This is my
+     second line
+    ^D
+   Output:
+    Lines: This is my first line\nThis is my\nsecond line\n
+    Number of lines: 3
+    Number of words: 10
+    Number of chars: 45
+    Joining Words:
+     This-is-my-first-line
+     This-is-my
+     second-line
+    
+
+8. Write a program to get a line as input from user and do below operations.
+   - Check whether the string begins with 'welcome' and ends with 'python' (case-insensitive check)
+   - Find the matched position of search string and return matched position if exists.
+   - Replace the line with given replace string
+   Input:
+    Enter the line:  <WELcome to python program>
+    Enter the search string:  <python>
+    Enter the replace string: <PHP>
+
+   Output:
+    The given line: WELcome to python program
+    Starts with 'welcome': True
+    Ends with 'python'   : False
+    Search string : python
+    Matched position: True [Position: 11]
+    Replace string: PHP
+    Replaced line : WELcome to PHP program
+
+
+9. Write a program to do below operations on list.
+   mylist = [10, 20, 30]
+   Output:
+    Given List             : [10, 20, 30]
+    Elements in the list   :  3
+    Add value at last      : [10, 20, 30, 40]
+    Added 2 values at last : [10, 20, 30, 40, 50, 60]
+    Add value at 2nd index :  [10, 20, 100, 30, 40, 50, 60]
+    Remove 2 values at last: [10, 20, 100, 30, 40]
+    Remove 2nd element     : [10, 20, 30, 40]
+    Remove first 2 elements: [30, 40]
+    Empty the list         : []
+    Remove the list variable from memory:  <ERROR-MESSAGE>
+
+
+10. Write a program to get a number from the user and check whether the number is between 100 and 150
+     [OR] between 200 and 250.
+    Input:
+     Enter the number: 125
+    Output:
+     The given number [125] is between 100 and 150.
+
+
+11. Write a program to find the given number is odd or even number ?
+    Input:
+     Enter the number: 15
+    Output:
+     The given number(15) is odd number.
+	 
+	 
+12. Write a program to check whether the given string is a palindrome ?
+    Input:
+     Enter the string: racecar
+    Output:
+     The given string 'racecar' is a palindrome.
+	 
+
+13. Write a program to display multiples of given number between 1 to 100. (2 types: using for and while loop)
+    - Also print the reverse of numbers between given range
+    Input:
+     Enter the number: 5
+    Output:
+     Result: 5, 10, 15, ... 100
+     Reverse: 100, 95, 90, ... 5
+
+
+14. Write a program to display multiplication table of given number with specified range using loops.
+    Input:
+     Enter the number for table: 5
+     Enter the number for table limit: 4
+
+    Output:
+     Multiplication Table of 5
+     *************************
+     1 * 5 = 5
+     2 * 5 = 10
+     3 * 5 = 15
+     4 * 5 = 20
+
+
+15. Write a program to design a calculator. It should ask for inputs from user until user exit the program.
+    - 2 types (using nested-if and functions)
+    Input:
+     ***** Welcome to Calculator ******
+     Please enter the numbers and select operation:
+     1. Addition
+     2. Subtraction
+     3. Multiplication
+     4. Division
+     Choose the option [1-4] : 1
+     Enter the number1 : 10
+     Enter the number2 : 20
+
+    Output:
+     The addition of given two numbers (10, 20) are: 30
+
+
+16. Write a program to maintain server/network details in a dictionary and do below operations.
+    Input:
+     ***** Server Maintenance Program *****
+     1. Add a New Server
+     2. Remove Server
+     3. Display Available Servers
+     4. Search a Server
+     5. Sort Servers
+     6. Clear Servers
+     7. Exit program
+     Choose your option [1-7]:
+
+
+17. Write a program to display below details.
+    Logged in User: <username>
+    Server Name: <hostname>
+    IP Address: <ip-address>
+    Current Directory: <current-directory>
+    Current Date: <DD-MON-YYYY>
+    System Date: Saturday, September 25, 2016 00:00:00 AM PDT 
+
+
+18. Write a program to get file name as input from user and display properties of a file.
+    Input:
+     Enter the filename:  sample.txt
+    Output:
+     Given filename: sample.txt
+     ***** File Properties *****
+     File Exist: True
+     Is File   : True
+     File Size : 20
+     Created Time: <date>
+     File Content: <contens of the file here>
+
+
+19. Write a program to create file inside given directory.
+    Input:
+     Enter the directory name: MYFOLDER
+     Enter the filename      : myfile.txt
+     Enter the file content  :
+      This is first line
+      My second
+      line
+
+    Output:
+     Current directory:  <path>
+     Files in directory: <files-list>
+     Folder created successfully.
+     File created successfully.
+     Contents inside file: <contents-of-file>
+
+
+20. Write a program to print command line arguments along with filename.
+    - The script should contain 2 command line args.
+    - The two args should be valid numbers. (use exceptions)
+    - Do the addition of two numbers and display the output.
+
+   cmd> python  myscript.py  100 200
+   Output:
+    Filename: myscript.py
+    Number of args: 3
+    The addition value of 100 and 200 is 300
+
+
+21. Write a program to print numbers with decimal points (multiple level loop)
+    Input:
+     Enter the number: 2
+     Enter the precision: 5
+    Output:
+     1.1 1.2 1.3 1.4 1.5 2.1 2.2 2.3 2.4 2.5 
+
+   
+22. Write a program to find the longest line in the given string ?
+    Input:
+     Enter the lines:
+      welcome to python
+      this is the longest line
+      this is my first line
+      this is second line
+      short line here
+      this is the end line
+    Output:
+     Given lines: [above lines here]
+     Longest line: this is the longest line [Length: 24]
+
+  
+23. Write a program to calculate the sum of given numbers?
+    Input:
+     Enter the limit/count for numbers: 3
+     Enter the number 1: 10
+     Enter the number 2: 20
+     Enter the number 3: 30
+    Output:
+     The sum of given numbers [10 20 30] is: 60
+
+	
+24. Write a program to print number histogram and get the sum of all digits in a number ?
+    Input:
+     Enter the number for histogram: 5826
+	Output:
+     The given number: 5826
+     Result,
+     *****
+     ********
+     **
+     ******
+    The sum of digits in number: 21
+	
+
+25. Write a program to count the number of characters(occurences) in a string.
+    Input:
+     Enter the string:  welcome to python program
+    Output:
+        ->  3
+     a  ->  1
+     c  ->  1
+     e  ->  2
+     g  ->  1
+     h  ->  1
+     m  ->  2
+     l  ->  1
+     o  ->  4
+     n  ->  1
+     p  ->  2
+     r  ->  2
+     t  ->  2
+     w  ->  1
+     y  ->  1
+
+
+-----     -----     -----     -----     -----
+26. Write a program to find the factorial of given number. (Recursive function)
+    Input:
+     Enter the number: 5
+    Output:
+     The factorial of given number 5 is 120
+
+
+27. Write a program with try-except to get two numbers as input from the user and do division operation.
+ - Use try block to get input from the user and do the division of numbers.
+ - Declare except handler for ZeroDivisionError and generate NameError with "ZERO DIVISON ERROR" message inside it.
+ - Declare default exception handler and print the error message "ERROR CAUGHT !!!" and exit the program.
+ - The program should always print "Program completed..." message at last irrespective of any errors.
+ 
+ Scenario 1:
+  Input:  
+   Enter the number1: 100
+   Enter the number2: 5
+  Output:
+   The division of 100 and 5 is 20
+   Program completed...
+   
+ Scenario 2:
+  Input:
+   Enter the number1: 100
+   Enter the number2: 0
+  Output:
+   Program completed...
+   Traceback (most recent call last):
+   File "C:/Users/Test/Desktop/exception.py", line 8, in <module>
+    raise NameError("ZERO DIVISION ERROR")
+    NameError: ZERO DIVISION ERROR
+	
+ Scenario 3:
+  Input:
+   Enter the number1: welcome
+  Output:
+   ERROR CAUGHT !!! (<class 'ValueError'>, ValueError("invalid literal for int() with base 10: 'asdfg'",), <traceback object at 0x05336DA0>)
+   program completed...
+  
+ 
+28. Write a module named "calc.py" with below declaration and do below operations.
+ Declare two variables: x=100, y=200
+ Declare two functions: addition(a,b),  multiply(a,b,c)
+ Print the declared variables and call functions[Ex: addition(50, 60) & multiply(2, 3, 5)] in main namespace
+ Declare documentation for calc module
+ 
+ - Import calc module and call addition() function with x and y values from module
+ - Import x variable and multiply() function from calc module and call multiply() function with x,2,3 as arguments
+ - Print the documentation for calc module
+ 
+
+29. Write a package named "Food" with below details
+ Food/fruit.py
+  Declare myfruits list with some fruit names such as apple, orange, etc.
+  Declare showFruits() function which will display all the fruits in for loop.
+
+ Food/vegetable.py
+  Declare myvegetables list with some vegetable names such as carrot, tomato, etc.
+  Declare showVegetables() function which will display all the vegetables in for loop.
+
+ Food/snacks.py
+  Declare mysnacks list with some snacks names such as biscuit, chocolate, etc.
+  Declare showSnacks() function which will display all the snacks in for loop.
+ 
+ Food/__init__.py
+  Import snacks module
+  Import showVegetables() function from vegetable module
+  Import all variables and functions from fruits module
+  
+ Import the Food package and check the access level for variables and functions. (Direct & Sub-level)
+  - Print all the variables (myfruits, myvegetables & mysnacks)
+  - Call all the functions  (showFruits, showVegetables & showSnacks)
+	
+
+30. Write a class named "Employee" and "Company" with below details.
+ Company:
+  Declare constructor and store "company_name" and "company_location" details. (static)
+  Declare a function named "showCompany()" which will display the company details.
+  
+ Employee: (Inherit 'Company' class)
+  Declare constructor and store "empid", "empname" and "department" details. (Dynamic)
+  Declare a function named "showEmployee()" which will display employee details.
+  
+ Create an object for 'Company' class and display company details.
+ Create an object for first Employee and display employee and company details. (1001, Manoj, IT)
+ Create an object for second Employee and display employee and company details. (1002, Suresh, Sales)
+ Change the department & company_location for second employee and display the details again.
+ 
+
+31. Write a program to get a sentence as input from the user and display the number of digits, alphabets and special characters.
+ Input:
+  Enter the sentence: Welcome to PYTHON. My number is 1234567890. END!!!
+ Output:
+  Given sentence: Welcome to PYTHON. My number is 1234567890. END!!!
+  Character  Count
+  ---------  -----
+   DIGITS     10
+   UPPER      11
+   LOWER      17
+   SPECIAL    12
+
+
+32. Write a program to print the ASCII value of characters in given string.
+ Input:
+  Enter the string: Welcome Python!
+ Output:
+  Given string: 
+  ASCII Characters:
+   W -> 87
+   e -> 101
+   l -> 108
+   c -> 99
+   o -> 111
+   m -> 109
+   e -> 101
+     -> 32
+   P -> 80
+   y -> 121
+   t -> 116
+   h -> 104
+   o -> 111
+   n -> 110
+   ! -> 33
+   
+   
+33. Write a program to calculate the Celsius to Fahrenheit & vice versa. (using functions)
+ Input:
+  Heat Calculator
+  ***************
+   1. Celsius to Fahrenheit
+   2. Fahrenheit to Celsius
+  Choose your option [1-2]: 1 
+  Enter the celsius: 5
+ Output:
+  Celsius: 5
+  Fahrenheit: 41
+
+
+34. Write a program to calculate the below math formulas. (using functions)
+ Area of square (a*a)
+ Area of circle (PI * r*r)
+ Area of Triangle (1/2 * b*h)
+ Area of Rectangle (w * h)
+ 
+  
+35. Write a program to match the given pattern using regular expressions.
+ str1 = "My phone number is 1234567890 and email address is username@intel.com"
+  - Extract phone number and email id from above string
+  Output:
+   Name         : USERNAME
+   Company      : INTEL
+   Phone number : 1234567890
+   Email address: username@intel.com
+
+ str2 = 'welcome to python program'
+  - Add $ symbol before and after each vowels in above string.
+  Output: 
+   w$e$lc$o$m$e$ t$o$ pyth$o$n pr$o$gr$a$m
+
+
+-------------------------
+Additional, (5 Exercises)
+
+36. Write a program for number guessing game. Generate random number between 1 to 10
+  Get number as input from the user. 
+    If number matches,    MSG: "Congrats! You guessed the number in 3 attempts"
+    If number is greater, MSG: "You number is greater than actual number. Please guess lower numbers"
+    If number is lower,   MSG: "You number is lower than actual number. Please guess greater numbers"
+    if not within range,   MSG: "Invalid number, Please enter number between 1 to 10"
+  Input:
+    Enter the number between 1 and 10: 5
+  Output:
+    Congrats! You guessed the number in 3 attempts
+
+
+37. Write a function to accept two lists as arguments. 
+  It should compare each values of two list and return the values present in both list and in same index position. (no duplicates)
+  Input:
+   Enter the size: 8
+   Enter the values for list1: 10 20 30 40 50 10 50 15
+   Enter the values for list2: 10 30 20 40 60 10 50 25
+  Output:
+   Result: 
+   *******
+   [10, 40, 50]
+
+
+38. Write a program to calculate the number of files and size of all files in given folder.
+  If the directory is not available display an error message "MYFOLDER: Directory does not exist".
+  Input:
+   Enter the folder name: MYFOLDER
+  Output:
+   Folder Details: (MYFOLDER)
+   ***************
+   Files:
+    abc.txt
+    sample.py
+    welcome.txt
+   Folders:
+    mydir1
+    mydir2
+   Total number of files: 3
+   Total number of directories: 2
+   Total size of all files: 1405 bytes
+
+
+39. Write a program to parse the below sales data and display below output.
+  Data:
+  #product;,;price;,;PurchaseDate
+  sales_data = """ 
+   Biscuit ;,;  $20.5  ;,;  01/07/2021  ,    Apple     ;,;
+    $10.0;,;     02/07/2021, Snacks;,;  $30.4  ;,;   03/07/2021
+  ,    BISCUIT   ;,;  $10.5     ;,;  04/07/2021      ,    snacks      ;,;     $10.6;,;     05/07/2021
+"""
+  Output:
+    ***** Sales Details *****
+    apple(1)    -> $10.0
+    biscuit(2)  -> $31.0
+    snacks(2)   -> $41.0
+
+
+40. Write a program to load database details into excel sheet.
+  - Create a table student in database (regno integer, name text, dept text)
+  - Insert 5 records.
+      1001 | Manoj | IT
+      1002 | Yuvan | EEE
+      1003 | Manojkumar | IT
+      1004 | Ramesh | ECE
+      1005 | Suresh | IT
+
+  - Write program to get student records from database.
+  - Write to student details into Excel sheet.
+  - Create a table "Student_IT" and insert 3 records into it. ("IT")
+
+  
+Project:
+--------
+Bank ATM machine Project
+  Design a program to do the functionalities of Bank ATM machine.
+
+Requirements,
+ - Display "Welcome Screen" with menu options
+    1. Account Summary
+    2. Withdraw Amount
+    3. Deposit Amount
+    4. Mini Statement [optional]
+    5. Transfer Amount [optional]
+    6. Exit
+ - For any option, get the card number and pin details and do the authentication [first time authentication]
+
+Level-1
+-------
+bank_account, (Table)
+  accno -> integer
+  firstname -> text
+  lastname -> text
+  balance -> float
+  createddate -> date default now
+
+1. Account Summary (select query)
+  Get the account number: 12345
+  Display account no, account name, balance.
+
+2. Withdraw Amount (update query - reduce balance)
+  Get the account number: 12345
+  Get the amount: 500
+    
+3. Deposit Amount (update query - add balance)
+  Get the account number: 12345
+  Get the amount: 50
+
+4. Add Account,
+  Get the accno, account name, amount
+
+
+Level-2
+-------
+Add below fields to table,
+ email -> text
+ username -> text
+ password -> text
+
+
+* Whenever there is a transaction (withdraw/deposit), send email notification to the user email address.
+  MSG: The account ending with xxxx1234 has been credited/debited with Rs.500. Current balance Rs. 1200
+
+* Transfer amount from one account to another
+  5. Transfer Amount
+    Get the account number from user to transfer amount from one account to another
+    Enter the From account number: 12345
+    Enter the To account number: 12346
+    Enter the amount to transfer: 1000
+
+
+Level-3
+-------
+Create a new table with below fields.
+transactions (Table)
+ accno -> foreign key refers to bank account (accno)
+ amount -> integer
+ type -> text  (credit / debit)
+ trans_date -> timestamp (default to current system date)
+
+* For every credit/debit into account add an entry in this table.
+
+* Add a new option for mini statement,
+  6. Mini Statement
+    Get the account number from user and display last 10 transaction statements.
+    Enter the account number: 12345
+
+    Mini Statement:
+    Date, Credit/debit, Amount
+    
+* Add a new option to download account statement.
+  7. Download statement
+  If the user selects option-5, then we need to ask for 2 sub-options as,
+    1. Download Locally
+    2. Send Email
+  If "Download Locally", then write the account data to excel and generate the file locally.
+  IF "Send Email", then write the account data to excel file and send it as an attachment in email.
+
+    
+
+Level-4
+-------
+Convert the above program using GUI(Tkinter) or Web page (Flask)
+Add below new fields to back_account table,
+ usertype -> text (Admin / Normal)
+ status -> text (Active / InActive)
+
+1. Get the username and password from user.
+2. Based on profile like admin / normal user show the options.
+  Admin User,
+  1. Account Summary
+  2. Withdraw Amount
+  3. Deposit Amount
+  4. Add Account
+  5. Remove/Disable Account
+  6. Mini Statement
+  7. Transaction History
+  8. Transfer Amount
+  9. Exit Program
+
+  Normal User,
+  1. Account Summary
+  2. Withdraw Amount
+  3. Deposit Amount
+  4. Mini Statement
+  5. Transaction History
+  6. Transfer Amount
+  7. Exit Program
+

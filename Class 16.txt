@@ -1,0 +1,15 @@
+Class 16 (13/08)
+----------
+
+Topics: Errors & Exceptions
+Next: 
+Exercise: 7,15,16,21,22
+
+-----
+
+try:
+—— 
+except:
+———
+finally:
+———

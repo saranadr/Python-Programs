@@ -1,0 +1,398 @@
+Class 14 (11/08)
+----------
+
+Topics: Functions, Files & Directories
+Next: Errors & Exceptions
+Exercise: 18, 19
+
+-----
+Functions: (Reusability, Modularity, Maintenance)
+----------
+
+Syntax,
+
+def func_name([args]):
+  ...
+  [return value]
+  
+
+Function Types,
+ Function with args and return value
+ Function with defaulat args
+ Function with keyword args
+ Function with variable length args
+ 
+
+4 categories,
+ list.sort()    - Func with no args and no return value
+ list.append(5) - Func with args and no return value
+ str.upper()    - Func with no args and return value
+ str.center(10) - Func with args and return value
+
+
+Lambda Functions - Anonymous function
+  lambda x,y:  x+y
+  
+>>> add = lambda x ,y: x + y
+>>> 
+>>> add(10, 20)
+30
+>>> 
+>>> f1 = lambda x, y, z: x + y * z
+>>> 
+>>> f1(10, 20, 30)
+
+
+-----
+Files:
+
+ open(filename, [modee])
+ 
+ Modes:
+  r - read    - open file for reading
+  w - write   - create,  overwrite
+  a - append  - create,  append
+  
+  
+import os
+ getcwd()
+ listdir('.')
+ rename()
+ remove()
+ 
+ mkdir()
+ chdir()
+ rmdir()
+ listdir()
+ 
+ stat()
+ 
+ 
+------------------------
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 100
+The value of b is 200
+A AFTER: 100
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 100
+The value of b is 200
+Traceback (most recent call last):
+  File "C:/Users/MEGALADEVI B/Desktop/Python/Saranya/func_globa_local.py", line 10, in <module>
+    print("B vlue: ", b)
+NameError: name 'b' is not defined
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 100
+The value of b is 200
+A AFTER: 100
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 150
+The value of b is 200
+A AFTER: 100
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 150
+The value of b is 200
+A AFTER: 150
+>>> 
+>>> 
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 100
+The value of b is 200
+A AFTER: 100
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 150
+The value of b is 200
+A AFTER: 100
+>>> ================================ RESTART ================================
+>>> 
+A BEFORE: 100
+The value of a is 150
+The value of b is 200
+A AFTER: 150
+>>> 
+>>> 
+>>> 
+>>> add = lambda x ,y: x + y
+>>> 
+>>> add(10, 20)
+30
+>>> 
+>>> mylist = [i*5 for i in range(1, 11)]
+>>> mylist
+[5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+>>> 
+>>> f1 = lambda x, y, z: x + y * z
+>>> 
+>>> f1(10, 20, 30)
+610
+>>> 
+>>> 
+>>> 
+>>> import os
+>>> 
+>>> os.getcwd()
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya'
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py']
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> 
+>>> import os
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py', 'sample.txt']
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> ================================ RESTART ================================
+>>> 
+File created successfully.
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+
+This is second line
+
+Third line
+
+End line
+
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+This is second line
+Third line
+End line
+>>> ================================ RESTART ================================
+>>> 
+['Welcome to python program - 2\n', 'This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+Welcome to
+[' python program - 2\n', 'This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+This is second line
+Third line
+End line
+
+[]
+>>> ================================ RESTART ================================
+>>> 
+MYSTR:  Welcome to python program - 2
+This is second line
+Third line
+End line
+
+[]
+>>> ================================ RESTART ================================
+>>> 
+MYSTR:  Welcome to python program - 2
+This is second line
+Third line
+End line
+
+LINES: []
+>>> ================================ RESTART ================================
+>>> 
+MYSTR:  Welco
+LINES: ['me to python program - 2\n', 'This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+MYSTR:  Welco
+LINE:  me to python program - 2
+
+LINES: ['This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+This is second line
+Third line
+End line
+>>> 
+>>> 
+>>> dir(fp)
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    dir(fp)
+NameError: name 'fp' is not defined
+>>> 
+>>> fp = open('sample.txt', 'r')
+>>> dir(fp)
+['_CHUNK_SIZE', '__class__', '__del__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__lt__', '__ne__', '__new__', '__next__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_checkClosed', '_checkReadable', '_checkSeekable', '_checkWritable', '_finalizing', 'buffer', 'close', 'closed', 'detach', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'line_buffering', 'mode', 'name', 'newlines', 'read', 'readable', 'readline', 'readlines', 'seek', 'seekable', 'tell', 'truncate', 'writable', 'write', 'writelines']
+>>> 
+>>> help(fp.seek)
+Help on built-in function seek:
+
+seek(...) method of _io.TextIOWrapper instance
+
+>>> 
+>>> fp.seek(0)
+0
+>>> fp.tell()
+0
+>>> ================================ RESTART ================================
+>>> 
+TELL:  0
+MYSTR:  Welco
+TELL:  5
+LINE:  me to python program - 2
+
+LINES: ['This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+TELL:  0
+MYSTR:  Welco
+TELL:  5
+TELL:  0
+LINE:  Welcome to python program - 2
+
+LINES: ['This is second line\n', 'Third line\n', 'End line\n']
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+This is second line
+Third line
+End line
+>>> Welcome to python program - 2
+SyntaxError: invalid syntax
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+Welcome to python program - 2
+This is second line
+Third line
+End line
+>>> 
+>>> 
+>>> import os
+>>> 
+>>> os.getcwd()
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya'
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py', 'sample.txt']
+>>> 
+>>> 
+>>> os.rename('sample.txt', 'sample1.txt')
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py', 'sample1.txt']
+>>> 
+>>> os.remove('sample1.txt')
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py']
+>>> 
+>>> os.stat('class10.txt')
+os.stat_result(st_mode=33206, st_ino=8444249301350371, st_dev=2729007572, st_nlink=1, st_uid=0, st_gid=0, st_size=1873, st_atime=1691199867, st_mtime=1691203495, st_ctime=1691199921)
+>>> 
+>>> os.stat('class10.txt')[6]
+1873
+>>> 
+>>> 
+>>> os.mkdir('MYFOLDER')
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py', 'MYFOLDER']
+>>> 
+>>> 
+>>> os.chdir('MYFOLDER')
+>>> os.getcwd()
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya\\MYFOLDER'
+>>> 
+>>> os.listdir('.')
+[]
+>>> os.chdir('..')
+>>> os.getcwd()
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya'
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py', 'MYFOLDER']
+>>> 
+>>> 
+>>> os.rmdir('MYFOLDER')
+>>> 
+>>> os.listdir('.')
+['class10.txt', 'class11.txt', 'class13.txt', 'class14.txt', 'class5.txt', 'class9.txt', 'file_operation.py', 'function.py', 'function_args.py', 'function_default_keyword.py', 'function_variable_length.py', 'func_globa_local.py']
+>>> 
+>>> 
+>>> os.listdir('C:\\Users\\MEGALADEVI B\\Desktop\\Python')
+['Anush', 'python.pptx', 'Python_Course_Final_v2.pdf', 'Python_Course_Final_v2_1.pdf', 'python_lab_new_1.txt', 'python_lab_new_v2_1.txt', 'Python_Notes_Final.pdf', 'Ref', 'sample.txt', 'Saranya', 'Sathish', 'SomethingInteresting.pdf', 'SomethingInteresting.pptx', 'Swetha']
+>>> 
+>>> 
+>>> os.stat('class10.txt')
+os.stat_result(st_mode=33206, st_ino=8444249301350371, st_dev=2729007572, st_nlink=1, st_uid=0, st_gid=0, st_size=1873, st_atime=1691199867, st_mtime=1691203495, st_ctime=1691199921)
+>>> 
+>>> os.stat('class10.txt')[6]
+1873
+>>> 
+>>> 
+>>> 
+>>> dir(os)
+['F_OK', 'MutableMapping', 'O_APPEND', 'O_BINARY', 'O_CREAT', 'O_EXCL', 'O_NOINHERIT', 'O_RANDOM', 'O_RDONLY', 'O_RDWR', 'O_SEQUENTIAL', 'O_SHORT_LIVED', 'O_TEMPORARY', 'O_TEXT', 'O_TRUNC', 'O_WRONLY', 'P_DETACH', 'P_NOWAIT', 'P_NOWAITO', 'P_OVERLAY', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'TMP_MAX', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_execvpe', '_exists', '_exit', '_get_exports_list', '_get_masked_mode', '_putenv', '_unsetenv', '_wrap_close', 'abort', 'access', 'altsep', 'chdir', 'chmod', 'close', 'closerange', 'cpu_count', 'curdir', 'defpath', 'device_encoding', 'devnull', 'dup', 'dup2', 'environ', 'errno', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fdopen', 'fsdecode', 'fsencode', 'fstat', 'fsync', 'get_exec_path', 'get_handle_inheritable', 'get_inheritable', 'get_terminal_size', 'getcwd', 'getcwdb', 'getenv', 'getlogin', 'getpid', 'getppid', 'isatty', 'kill', 'linesep', 'link', 'listdir', 'lseek', 'lstat', 'makedirs', 'mkdir', 'name', 'open', 'pardir', 'path', 'pathsep', 'pipe', 'popen', 'putenv', 'read', 'readlink', 'remove', 'removedirs', 'rename', 'renames', 'replace', 'rmdir', 'sep', 'set_handle_inheritable', 'set_inheritable', 'spawnl', 'spawnle', 'spawnv', 'spawnve', 'st', 'startfile', 'stat', 'stat_float_times', 'stat_result', 'statvfs_result', 'strerror', 'supports_bytes_environ', 'supports_dir_fd', 'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sys', 'system', 'terminal_size', 'times', 'times_result', 'umask', 'uname_result', 'unlink', 'urandom', 'utime', 'waitpid', 'walk', 'write']
+>>> 
+>>> 
+>>> dir(os.path)
+['__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_get_altsep', '_get_bothseps', '_get_colon', '_get_dot', '_get_empty', '_get_sep', '_get_special', '_getfinalpathname', '_getfullpathname', '_getvolumepathname', 'abspath', 'altsep', 'basename', 'commonprefix', 'curdir', 'defpath', 'devnull', 'dirname', 'exists', 'expanduser', 'expandvars', 'extsep', 'genericpath', 'getatime', 'getctime', 'getmtime', 'getsize', 'isabs', 'isdir', 'isfile', 'islink', 'ismount', 'join', 'lexists', 'normcase', 'normpath', 'os', 'pardir', 'pathsep', 'realpath', 'relpath', 'samefile', 'sameopenfile', 'samestat', 'sep', 'split', 'splitdrive', 'splitext', 'splitunc', 'stat', 'supports_unicode_filenames', 'sys']
+>>> 
+>>> 
+>>> os.stat('class10.txt')
+os.stat_result(st_mode=33206, st_ino=8444249301350371, st_dev=2729007572, st_nlink=1, st_uid=0, st_gid=0, st_size=1873, st_atime=1691199867, st_mtime=1691203495, st_ctime=1691199921)
+>>> 
+>>> os.path.getsize('class10.txt')
+1873
+>>> os.path.getatime('class10.txt')
+1691199867.5978923
+>>> os.path.getctime('class10.txt')
+1691199921.9915555
+>>> os.path.getmtime('class10.txt')
+1691203495.6240466
+>>> 
+>>> os.path.isfile('class10.txt')
+True
+>>> os.path.isdir('class10.txt')
+False
+>>> 
+>>> os.path.exists('class10.txt')
+True
+>>> 
+>>> os.path.abspath('class10.txt')
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya\\class10.txt'
+>>> 
+>>> os.path.basename('C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya\\class10.txt')
+'class10.txt'
+>>> os.path.dirname('C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya\\class10.txt')
+'C:\\Users\\MEGALADEVI B\\Desktop\\Python\\Saranya'
+>>> 
+>>> 
+>>> 

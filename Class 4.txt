@@ -1,0 +1,182 @@
+Python 3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+
+========================================================================= RESTART: /Users/saraathipatla/Desktop/Python/Ex1.py ========================================================================
+This\\t is my	 'first' program\ in "PYTHON"
+using"
+This\\t is my	 'first' program\ in "PYTHON"
+using'
+
+========================================================================= RESTART: /Users/saraathipatla/Desktop/Python/Ex1.py ========================================================================
+This	 is my	 'first' program\ in "PYTHON"
+using"
+This\t is my	 'first' program\ in "PYTHON"
+using'
+
+========================================================================= RESTART: /Users/saraathipatla/Desktop/Python/Ex1.py ========================================================================
+This\	 is my	 'first' program\ in "PYTHON"
+using"
+This\\t is my	 'first' program\ in "PYTHON"
+using'
+
+========================================================================= RESTART: /Users/saraathipatla/Desktop/Python/Ex1.py ========================================================================
+This\\t is my	 'first' program\ in "PYTHON"
+using"
+This\\t is my	 'first' program\ in "PYTHON"
+using'
+
+========================================================================= RESTART: /Users/saraathipatla/Desktop/Python/Ex2.py ========================================================================
+The value of 'a' is 10 and "b" is 20.5 and name is " abcd "
+The value of 'a' is 10 and "b" is 20.5 and name is "abcd"
+The value of 'a' is 10 and "b" is 20.5 and name is "abcd"
+The value of 'a' is 10 and "b" is 20.5 and name is "abcd"
+input('Enter the name')
+Enter the nameSaranya
+'Saranya'
+name=input('Enter the name')
+Enter the nameSaranya
+print(name)
+Saranya
+type(name)
+<class 'str'>
+empid=input('Enter the employee ID: ')
+Enter the employee ID: 1234
+print(empid)
+1234
+type(empid)
+<class 'str'>
+empid
+'1234'
+name
+'Saranya'
+empid=int(empid)
+empid
+1234
+empid=int(input('Enter the employee ID: '))
+Enter the employee ID: 5678
+empid
+5678
+percent=input('enter the percentage: ')
+enter the percentage: 89.98
+percent
+'89.98'
+percent=float(input('enter the percentage: '))
+enter the percentage: 89.98
+percent
+89.98
+
+
+
+line=sys.stdin.readline()
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    line=sys.stdin.readline()
+NameError: name 'sys' is not defined
+import sys
+line=sys.stdin.readline()
+welcoome to python
+line
+'welcoome to python\n'
+type(line)
+<class 'str'>
+
+
+lines=sys.stdin.readlines()
+welome
+ to 
+python
+class
+lines
+['welome\n', ' to \n', 'python\n', 'class\n']
+type(lines)
+<class 'list'>
+
+
+
+name
+'Saranya'
+type(name)
+<class 'str'>
+len(name)
+7
+name[0]
+'S'
+name[1]
+'a'
+name[6]
+'a'
+name[7]
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    name[7]
+IndexError: string index out of range
+
+
+mystr='welcome to python program'
+>>> type(mystr)
+<class 'str'>
+>>> len(mystr)
+25
+>>> mystr[0]
+'w'
+>>> mystr[24]
+'m'
+>>> mystr[0:7]
+'welcome'
+>>> mystr[11:17]
+'python'
+>>> mystr[18:25]
+'program'
+>>> mystr[18:26]
+'program'
+>>> mystr[18:]
+'program'
+>>> mystr[11:]
+'python program'
+>>> mystr[:17]
+'welcome to python'
+>>> mystr
+'welcome to python program'
+>>> mystr[:]
+'welcome to python program'
+>>> 
+>>> 
+>>> mystr[:7]
+'welcome'
+>>> mystr[7:]
+' to python program'
+>>> mystr[11:17]
+'python'
+>>> mystr[18:]
+'program'
+>>> mystr[:18]
+'welcome to python '
+>>> len(mystr)-7
+18
+>>> mystr[len(mystr)-7:]
+'program'
+>>> mystr[-1]
+'m'
+>>> mystr[-2]
+'a'
+>>> mystr[-25]
+'w'
+>>> mystr[-7:]
+'program'
+>>> mystr[:-7]
+'welcome to python '
+>>> 
+>>> 
+>>> mystr[3:-3]
+'come to python prog'
+>>> 
+>>> mystr[::]
+'welcome to python program'
+>>> mystr[::1]
+'welcome to python program'
+>>> mystr[::2]
+'wloet yhnporm'
+>>> mystr[::3]
+'wceoyopgm'
+>>> mystr[::-1]
+'margorp nohtyp ot emoclew'

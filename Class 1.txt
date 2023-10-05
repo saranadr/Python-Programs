@@ -1,0 +1,65 @@
+Class 1 (23/07)
+----------
+
+Version,
+2.x - Older
+3.x - New
+
+$a - scalar
+@array - array
+
+a
+array
+
+Python - Indentation language
+
+C/C++/Java,
+int a;
+a=100;
+if (a == 100) {
+ printf("IF MATCH");
+    printf("A value is 100");
+}
+
+
+Python, (Indentation Language) - Dynamic Data Type Allocation
+a=100
+if a == 100:
+   print("IF MATCH")
+   print("Value of a is 100")
+print("If block end")
+
+
+Compiled Vs Interpreted,
+sample.java
+> javac sample.java
+> java sample
+
+
+sample.py
+> python sample.py
+
+
+Comments,
+C/C++/Java
+single line - //
+Multi line - /* ........ */
+
+Python,
+single line - #
+"""....""" 
+
+File Extension
+ .py - default
+ .pyw - windows
+ .pyc - compiled
+
+
+a = 100
+
+Escaping Characters
+\n = newline
+\t - tab
+\\ - \
+\'
+\"

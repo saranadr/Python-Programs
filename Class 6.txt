@@ -1,0 +1,156 @@
+
+help(mystr.upper)
+Help on built-in function upper:
+
+upper() method of builtins.str instance
+    Return a copy of the string converted to uppercase.
+
+help(str.upper)
+Help on method_descriptor:
+
+upper(self, /)
+    Return a copy of the string converted to uppercase.
+
+mylist=[10, 20.5, 'name']
+mylist
+[10, 20.5, 'name']
+type(mylist)
+<class 'list'>
+len(mylist)
+3
+mylist[0]
+10
+mylist[:2]
+[10, 20.5]
+mylist[-1]
+'name'
+mylist[1]
+20.5
+mylist[1]=20
+mylist
+[10, 20, 'name']
+mylist[2]
+'name'
+mylist[2]=30
+mylist
+[10, 20, 30]
+dir(mylist)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+
+mylist.append(50)
+mylist
+[10, 20, 30, 50]
+mylist.extend([35,45,75])
+mylist
+[10, 20, 30, 50, 35, 45, 75]
+mylist.insert(2,100)
+mylist
+[10, 20, 100, 30, 50, 35, 45, 75]
+mylist[2,2]
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    mylist[2,2]
+TypeError: list indices must be integers or slices, not tuple
+
+mylist[2:2]
+[]
+mylist[2:3]
+[100]
+mylist[2:2]=[80,90]
+mylist
+[10, 20, 80, 90, 100, 30, 50, 35, 45, 75]
+mylist[2:5]
+[80, 90, 100]
+mylist[2:5]=[65,25,90]
+mylist
+[10, 20, 65, 25, 90, 30, 50, 35, 45, 75]
+mylist.count(90)
+1
+mylist.count(70)
+0
+mylist.index(90)
+4
+mylist
+[10, 20, 65, 25, 90, 30, 50, 35, 45, 75]
+mylist.reverse()
+mylist
+[75, 45, 35, 50, 30, 90, 25, 65, 20, 10]
+mylist.sort()
+mylist
+[10, 20, 25, 30, 35, 45, 50, 65, 75, 90]
+mylist.sort(reverse=True)
+mylist
+[90, 75, 65, 50, 45, 35, 30, 25, 20, 10]
+mylist.pop()
+10
+mylist
+[90, 75, 65, 50, 45, 35, 30, 25, 20]
+mylist.pop(2)
+65
+mylist
+[90, 75, 50, 45, 35, 30, 25, 20]
+mylist.remove(45)
+mylist
+[90, 75, 50, 35, 30, 25, 20]
+dir(mylist)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+mylist1=mylist
+mylist
+[90, 75, 50, 35, 30, 25, 20]
+mylist1
+[90, 75, 50, 35, 30, 25, 20]
+mylist1[2=100]
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+mylist1[2]
+50
+mylist1[2]=100
+mylist1
+[90, 75, 100, 35, 30, 25, 20]
+mylist
+[90, 75, 100, 35, 30, 25, 20]
+mylist2=mylist.copy
+mylist2.pop()
+Traceback (most recent call last):
+  File "<pyshell#62>", line 1, in <module>
+    mylist2.pop()
+AttributeError: 'builtin_function_or_method' object has no attribute 'pop'
+>>> mylist2=mylist.copy()
+>>> mylist2
+[90, 75, 100, 35, 30, 25, 20]
+>>> mylist2.pop()
+20
+>>> mylist2
+[90, 75, 100, 35, 30, 25]
+>>> mylist
+[90, 75, 100, 35, 30, 25, 20]
+>>> mylist.clear()
+>>> mylist
+[]
+>>> mylist1
+[]
+>>> del(mylist)
+>>> mylist
+Traceback (most recent call last):
+  File "<pyshell#72>", line 1, in <module>
+    mylist
+NameError: name 'mylist' is not defined. Did you mean: 'mylist1'?
+>>> mytuple=(10,20.5,'name')
+>>> type(mytuple)
+<class 'tuple'>
+>>> len(mytuple)
+3
+>>> mytuple(1)
+Traceback (most recent call last):
+  File "<pyshell#76>", line 1, in <module>
+    mytuple(1)
+TypeError: 'tuple' object is not callable
+>>> mytuple[1]
+20.5
+>>> mytuple[1]=40
+Traceback (most recent call last):
+  File "<pyshell#78>", line 1, in <module>
+    mytuple[1]=40
+TypeError: 'tuple' object does not support item assignment
+>>> dir(mytuple)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
